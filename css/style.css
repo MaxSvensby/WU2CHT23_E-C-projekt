@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background: rgba(39,174,96, 0.6);
+    width: auto;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: hea;
+}
+
+ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 85vh ;
+    grid-template-areas:
+    "hea"
+    "sec"
+    ;
+    background-image: url("/img/zhenyu-luo-2p1U8zi7cwY-unsplash.jpg");
+    background-size: cover;
+    /*border-bottom: solid black; */
+}
+
+section {
+    grid-area: sec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    width: 500px;
+    height: 150px;
+    background: gray;
+}
