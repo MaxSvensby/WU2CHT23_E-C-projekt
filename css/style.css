@@ -30,28 +30,36 @@ a:hover {
     color: aliceblue;
 }
 
+#background{
+    background-image: url("/img/zhenyu-luo-2p1U8zi7cwY-unsplash.jpg");
+    background-size: cover;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15vh 85vh ;
+    grid-template-rows: 15vh 15vh 70vh ;
     grid-template-areas:
     "hea"
+    "."
     "sec"
     ;
-    background-image: url("/img/zhenyu-luo-2p1U8zi7cwY-unsplash.jpg");
-    background-size: cover;
     /*border-bottom: solid black; */
 }
 
 section {
     grid-area: sec;
     display: flex;
+    /*position: relative; top: 250px;*/
     align-items: center;
     justify-content: center;
 }
 
 p {
-    width: 500px;
-    height: 150px;
-    background: gray;
+    width: 300px;
+    height: 100px;
+    background-image: url("/img/AdventureAtlas\ v1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*background: gray;*/
 }
