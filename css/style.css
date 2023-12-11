@@ -31,18 +31,26 @@ a:hover {
 }
 
 #background{
-    background-image: url("/img/zhenyu-luo-2p1U8zi7cwY-unsplash.jpg");
+    grid-area: home;
+    background-image: url("../img/jamie-street-_94HLr_QXo8-unsplash.jpg");
     background-size: cover;
-}
-
-body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15vh 15vh 70vh ;
+    grid-template-rows: 15vh 15vh 70vh;
     grid-template-areas:
     "hea"
     "."
     "sec"
+    ;
+}
+
+#home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 115vh 100vh;
+    grid-template-areas:
+    "home"
+    "cards"
     ;
     /*border-bottom: solid black; */
 }
@@ -55,11 +63,77 @@ section {
     justify-content: center;
 }
 
-p {
+#logo {
     width: 300px;
     height: 100px;
-    background-image: url("/img/AdventureAtlas\ v1.png");
+    background-image: url("../img/AdventureAtlas\ v1.png");
     background-size: contain;
     background-repeat: no-repeat;
     /*background: gray;*/
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70vh 30vh;
+    grid-template-areas:
+    "art1 art2 art3"
+    "foot foot foot"
+    ;
+}
+
+#article_1 {
+    grid-area: art1;
+}
+
+#article_2 {
+    grid-area: art2;
+}
+
+#article_3 {
+    grid-area: art3;
+}
+
+.articles {
+    background: rgba(39,174,96, 0.6);
+    margin: 2rem;
+    border-radius: 1rem;
+    transition: all .4s ease;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 29vh 30vh;
+    grid-template-areas:
+    "back"
+    "text"
+    ;
+}
+
+.card_background {
+    grid-area: back;
+    background: url("../img/zhenyu-luo-2p1U8zi7cwY-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    transition: all 0.4s ease;
+}
+
+.card_background:hover {
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+.articles:hover {
+    border-radius: 3rem;
+}
+
+.card_text {
+    grid-area: text;
+}
+
+
+
+footer {
+    grid-area: foot;
+    background: rgba(39,174,96, 0.6);
 }
