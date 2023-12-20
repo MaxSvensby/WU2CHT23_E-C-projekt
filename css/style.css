@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kenia&family=Noto+Serif:wght@500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 
 *{
@@ -42,19 +40,14 @@ a{
     line-height: 1;
 }
 
-.header_a:where(:hover, :focus-visible) {
+.header_a:hover {
     background-size: 100% var(--bg-h);
     background-position-x: left;
 }
 
-.underline {
-    padding-bottom: 2px;
-    --bg-h: 2px;
-}
-
 #background{
     grid-area: home;
-    background-image: url("../img/jamie-street-_94HLr_QXo8-unsplash\ -\ kopia.jpg");
+    background-image: url("../img/jamie-street-_94HLr_QXo8-unsplash-kopia.jpg");
     background-size: cover;
     display: grid;
     grid-template-columns: 1fr;
@@ -76,13 +69,11 @@ a{
     "home"
     "cards"
     ;
-    /*border-bottom: solid black; */
 }
 
 #section_logo {
     grid-area: sec;
     display: flex;
-    /*position: relative; top: 250px;*/
     align-items: center;
     justify-content: center;
 }
@@ -90,10 +81,9 @@ a{
 #logo {
     width: 300px;
     height: 100px;
-    background-image: url("../img/AdventureAtlas\ v1.png");
+    background-image: url("../img/AdventureAtlas.png");
     background-size: contain;
     background-repeat: no-repeat;
-    /*background: gray;*/
 }
 
 #cards {
@@ -106,14 +96,13 @@ a{
     ". . ."
     "foot foot foot"
     ;
-    background-image: url("../img/larm-rmah-5em1lVBmvw8-unsplash\ -\ kopia.jpg");
+    background-image: url("../img/larm-rmah-5em1lVBmvw8-unsplash-kopia.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #border {
     grid-area: bor;
-    /*background: rgba(39,174,96, 1);*/
     background: rgb(21, 95, 52);
 }
 
@@ -181,19 +170,19 @@ a{
 }
 
 #card_background_1 {
-    background: url("../img/chris-karidis-nnzkZNYWHaU-unsplash\ -\ kopia.jpg");
+    background: url("../img/chris-karidis-nnzkZNYWHaU-unsplash-kopia.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #card_background_2 {
-    background: url("../img/giammarco-boscaro-q140lHKzXZY-unsplash\ -\ kopia.jpg");
+    background: url("../img/giammarco-boscaro-q140lHKzXZY-unsplash-kopia.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #card_background_3 {
-    background: url("../img/rich-martello-mSVRrKEZAH8-unsplash\ -\ kopia.jpg");
+    background: url("../img/rich-martello-mSVRrKEZAH8-unsplash-kopia.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -288,7 +277,7 @@ img {
 #om_oss_info {
     display: flex;
     flex-direction: column;
-    justify-content: first baseline;
+    justify-content: flex-start;
     align-items: center;
     margin: 60px;
 }
